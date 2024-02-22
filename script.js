@@ -21,7 +21,7 @@ function create_label(tagname,attrname,attrvalue,content){
     let ele = document.createElement(tagname);
     ele.setAttribute(attrname,attrvalue);
     ele.innerHTML=content;
-    return ele
+    return ele;
 }
  
 function create_break(){
