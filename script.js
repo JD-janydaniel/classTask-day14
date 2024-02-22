@@ -1,22 +1,3 @@
-function foo(){
-    
-    let first = document.getElementById("firstname").value;
-    console.log(`FirstName:${first}`)
-
-    let middle = document.getElementById("middlename").value;
-    console.log(`MiddleName:${middle}`)
-
-    let last = document.getElementById("lastname").value;
-    console.log(`LastName:${last}`)
-
-    let gmail = document.getElementById("email").value;
-    console.log(`Email:${gmail}`)
-    
-    let password = document.getElementById("password").value;
-    console.log(`Password:${password}`)
-
-}
-
 function create_label(tagname,attrname,attrvalue,content){
     let ele = document.createElement(tagname);
     ele.setAttribute(attrname,attrvalue);
@@ -76,6 +57,25 @@ let password_input = create_input("input","type","password","id","password");
 let password1_break = create_break();
 
 let button = create_button("button","type","button","onclick","foo()","Submit");
+
+function foo(){
+    
+    let first = document.getElementById("firstname").value;
+    console.log(`FirstName:${first}`)
+
+    let middle = document.getElementById("middlename").value;
+    console.log(`MiddleName:${middle}`)
+
+    let last = document.getElementById("lastname").value;
+    console.log(`LastName:${last}`)
+
+    let gmail = document.getElementById("email").value;
+    console.log(`Email:${gmail}`)
+    
+    let password = document.getElementById("password").value;
+    console.log(`Password:${password}`)
+
+}
 
 document.body.append(first_label,first_break,first_input,first1_break,middle_label,middle_break,middle_input,middle1_break,last_label,last_break,last_input,last1_break,email_label,email_break,email_input,email1_break,password_label,password_break,password_input,password1_break,button);
 
